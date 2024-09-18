@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  app:
+    container_name: srcbot
+    build: .
+    command: bash bash.sh
+    environment:
+      API_ID: '21179966' # Your API HASH from my.telegram.org
+      API_HASH: 'd97919fb0a3c725e8bb2a25bbb37d57c' # Your API ID from my.telegram.org
+      BOT_TOKEN: '7341057146:AAGW0VvAGgDGPRhzJTQTLIiwyljrhT5Mxgo' # Bot token, get it from @BotFather
